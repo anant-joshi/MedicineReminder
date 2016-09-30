@@ -15,7 +15,7 @@ public class DatabaseHelper extends SQLiteOpenHelper{
     private static final String DATABASE_NAME = "MEDICINE";
 
     private static final String KEY_ID = "id";
-    private static final String KEY_MEDICINE = "medicine_name";
+    private static final String KEY_MEDICINE = "med_name";
     private static final String KEY_BREAKFAST = "med_breakfast";
     private static final String KEY_LUNCH = "med_lunch";
     private static final String KEY_DINNER = "med_dinner";
