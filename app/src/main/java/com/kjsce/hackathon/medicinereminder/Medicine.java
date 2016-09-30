@@ -1,7 +1,5 @@
 package com.kjsce.hackathon.medicinereminder;
 
-import android.util.Log;
-
 /**
  * Created by anant on 30/9/16.
  */
@@ -18,7 +16,6 @@ public class Medicine {
     }
 
     public void setDaysOfWeek(){
-        Log.v("A","hello");
     }
 
     public int getBreakfast() {
