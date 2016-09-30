@@ -27,7 +27,7 @@ public class DaysOfWeek {
         }
         return arr;
     }
-    private void setDaysOfWeek(boolean[] daysOfWeekArray){
+    public void setDaysOfWeek(boolean[] daysOfWeekArray){
         for (int i = 0; i< daysOfWeekArray.length; i++){
             daysOfWeek+=(daysOfWeekArray[i])?Math.pow(2,i):0;
         }

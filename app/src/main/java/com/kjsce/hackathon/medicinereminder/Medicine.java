@@ -50,4 +50,7 @@ public class Medicine {
         this.dinner = dinner;
     }
 
+    public void setDaysOfWeek(boolean[] days) {
+        daysOfWeek.setDaysOfWeek(days);
+    }
 }
