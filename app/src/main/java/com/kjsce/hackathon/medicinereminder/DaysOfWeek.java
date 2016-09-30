@@ -7,5 +7,5 @@ package com.kjsce.hackathon.medicinereminder;
 public class DaysOfWeek {
     private int daysOfWeek;
     private DaysOfWeek(){}
-    public static
+    public static void hello(){}
 }
