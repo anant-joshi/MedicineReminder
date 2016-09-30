@@ -9,8 +9,13 @@ public class Medicine {
     private int dinner;
     private int breakfast;
     private int lunch;
-    private int daysOfWeek;
-    private boolean[] daysOfWeekArray;
+    private DaysOfWeek daysOfWeek;
+
+    public int getDaysOfWeek(){
+        return daysOfWeek.getDaysOfWeek();
+    }
+
+    public void setDaysOfWeek(){}
 
     public int getBreakfast() {
         return breakfast;
@@ -43,33 +48,5 @@ public class Medicine {
     public void setDinner(int dinner) {
         this.dinner = dinner;
     }
-    private void setDaysOfWeek(){
-        for (int i = 0; i< daysOfWeekArray.length; i++){
-            daysOfWeek+=(daysOfWeekArray[i])?Math.pow(2,i):0;
-        }
-    }
-    public static boolean[] getDaysOfWeekArray(int daysOfWeek){
-        boolean[] arr =  new boolean[7];
-        for(int i = 6; i>=0; i--){
-            int power = (int) Math.pow(2,i);
-            if(daysOfWeek>=power){
-                arr[i] = true;
-                daysOfWeek -= power;
-            }
-        }
-        return arr;
-    }
 
-
-    /*
-    * 0 - Sunday
-    * 1 - Monday
-    * 2 - Tuesday
-    * ...
-    * 6 - Saturday
-    * */
-    public void setDaysOfWeekArray(boolean[] daysOfWeekArray) {
-        this.daysOfWeekArray = daysOfWeekArray;
-        setDaysOfWeek();
-    }
 }
